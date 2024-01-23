@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HabitTrackerMaui.InsertRecord">
+
+    <ContentView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="50">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column = "0"
+                Text="Date of run (Format = dd-MM-yy)"/>
+            <Label Grid.Column = "1"
+                Text="Minutes ran (Whole numbers only)"/>
+            <Label Grid.Column = "2"
+                Text="Distance ran (Whole numbers only)"/>
+            <Entry Grid.Column ="0"
+                Grid.Row = "1"
+                x:Name="InsertDateText"/>
+            <Entry Grid.Column ="1"
+                Grid.Row = "1"
+                x:Name="MinutesRan"/>
+            <Entry Grid.Column ="2"
+                Grid.Row = "1"
+                x:Name="DistanceRan"/>
+            <Button x:Name="SubmitAnswer"
+                Grid.Row = "2"
+                Grid.ColumnSpan="3"
+                BackgroundColor="ForestGreen"
+                Text="Submit Answers"
+                Clicked="AddRecordToDb"/>
+            <Label IsVisible="false"
+                Grid.Row = "3"
+                Grid.ColumnSpan = "4"
+                x:Name="EmptyAnswerError"
+                Text="One or more empty answers, please ensure you have entered an answer in each box"
+                />
+            <Button x:Name="RtnMainMenu" 
+                IsVisible = "false"
+                Grid.Row = "3"
+                Grid.ColumnSpan = "3"
+                BackgroundColor = "Orange"
+                Text = "Return to menu"
+                Clicked = "ReturnToMainMenu"
+                />
+        </Grid>
+
+        </VerticalStackLayout>
+    </ContentView>
+
+</ContentPage>

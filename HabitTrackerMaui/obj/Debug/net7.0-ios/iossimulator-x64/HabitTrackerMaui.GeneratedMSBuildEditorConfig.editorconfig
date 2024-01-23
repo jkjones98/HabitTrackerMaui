@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HabitTrackerMaui
+build_property.ProjectDir = /Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/
+
+[/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HabitTrackerMaui.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HabitTrackerMaui.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/InsertRecord.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HabitTrackerMaui.InsertRecord.xaml
+build_metadata.AdditionalFiles.TargetPath = InsertRecord.xaml
+build_metadata.AdditionalFiles.RelativePath = InsertRecord.xaml
+
+[/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HabitTrackerMaui.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HabitTrackerMaui.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HabitTrackerMaui.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/ViewRecords.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HabitTrackerMaui.ViewRecords.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewRecords.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewRecords.xaml

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HabitTrackerMaui.UpdateRecords">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column = "0"
+                    Text="Id of entry to update"/>
+                <Label Grid.Column = "1"
+                    Text="Date of run (Format = dd-MM-yy)"/>
+                <Label Grid.Column = "2"
+                    Text="Minutes ran (Whole numbers only)"/>
+                <Label Grid.Column = "3"
+                    Text="Distance ran (Whole numbers only)"/>
+                <Entry Grid.Column ="0"
+                    Grid.Row = "1"
+                    x:Name="InsertIdText"/>
+                <Entry Grid.Column ="1"
+                    Grid.Row = "1"
+                    x:Name="InsertDateText"/>
+                <Entry Grid.Column ="2"
+                    Grid.Row = "1"
+                    x:Name="MinutesRan"/>
+                <Entry Grid.Column ="3"
+                    Grid.Row = "1"
+                    x:Name="DistanceRan"/>
+                <Button x:Name="SubmitUpdates"
+                    Grid.Column = "0"
+                    Grid.Row = "2"
+                    Grid.ColumnSpan="2"
+                    BackgroundColor="ForestGreen"
+                    Text="Update"
+                    Clicked="OnUpdate"/>
+                <Button x:Name="RtnMainMenu" 
+                    Grid.Column = "2"
+                    Grid.Row = "2"
+                    Grid.ColumnSpan = "2"
+                    BackgroundColor = "Red"
+                    Text = "Return to menu"
+                    Clicked = "ReturnToMainMenu"
+                    />
+                <Label IsVisible="false"
+                    Grid.Row = "3"
+                    Grid.ColumnSpan = "4"
+                    x:Name="EmptyAnswerError"
+                    Text="One or more empty answers, please ensure you have entered an answer in each box"
+                    />
+                <Label IsVisible="false"
+                    Grid.Row = "3"
+                    Grid.ColumnSpan = "4"
+                    x:Name="IdNotExist"
+                    Text="The specified Id does not exist"
+                    />
+                <Label IsVisible="false"
+                    Grid.Row = "3"
+                    Grid.ColumnSpan = "4"
+                    x:Name="DateFormatIncorrect"
+                    Text="Please format the date as follows: dd-MM-yy e.g. 10-10-23"
+                    />
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height = "35"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width = "2*"/>
+                    <ColumnDefinition Width = "2*"/>
+                    <ColumnDefinition Width = "2*"/>
+                    <ColumnDefinition Width = "2*"/>
+                </Grid.ColumnDefinitions>
+                    <Label Grid.Column = "0" Text = "Id"
+                        HorizontalOptions = "Center"/>
+                    <Label Grid.Column = "1" Text = "Date"
+                        HorizontalOptions = "Center"/>
+                    <Label Grid.Column = "2" Text = "Minutes"
+                        HorizontalOptions = "Center"/>
+                    <Label Grid.Column = "3" Text = "Distance"
+                        HorizontalOptions = "Center"/>
+            </Grid>
+
+            <CollectionView x:Name = "habitGrid">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height = "35" />
+                                <RowDefinition Height = "35"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width = "2*"/>
+                                <ColumnDefinition Width = "2*"/>
+                                <ColumnDefinition Width = "2*"/>
+                                <ColumnDefinition Width = "2*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label Grid.Column = "0" Text = "{Binding Id}"
+                                HorizontalOptions = "Center"/>
+                            <Label Grid.Column = "1" Text = "{Binding DateRun}"
+                                HorizontalOptions = "Center"/>
+                            <Label Grid.Column = "2" Text = "{Binding MinutesRan}"
+                                HorizontalOptions = "Center"/>
+                            <Label Grid.Column = "3" Text = "{Binding DistanceRan}"
+                                HorizontalOptions = "Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

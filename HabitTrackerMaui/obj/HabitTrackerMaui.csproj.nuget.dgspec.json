@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/HabitTrackerMaui.csproj": {}
+  },
+  "projects": {
+    "/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/HabitTrackerMaui.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/HabitTrackerMaui.csproj",
+        "projectName": "HabitTrackerMaui",
+        "projectPath": "/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/HabitTrackerMaui.csproj",
+        "packagesPath": "/Users/jj/.nuget/packages/",
+        "outputPath": "/Users/jj/VSCodeProjects/HabitTrackerActualMaui/HabitTrackerMaui/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/jj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-maccatalyst"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-maccatalyst16.1": {
+            "targetAlias": "net7.0-maccatalyst",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-maccatalyst16.1": {
+          "targetAlias": "net7.0-maccatalyst",
+          "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Maui.Graphics": {
+              "target": "Package",
+              "version": "[7.0.92, )",
+              "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
+            }
+          },
+          "imports": [
+            "xamarinios10",
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.MacCatalyst": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Controls": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Core": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Essentials": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "maccatalyst-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

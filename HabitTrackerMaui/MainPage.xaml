@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HabitTrackerMaui.MainPage">
+    <ContentView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="50"
+        >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height = "50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions Spacing="25">
+                    <ColumnDefinition Width = "2*"/>
+                    <ColumnDefinition Width = "2*"/>
+                    <ColumnDefinition Width = "2*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Button Grid.Column = "0" 
+                    Text = "Insert"
+                    Clicked="OnActionChosen"/>
+                <Button Grid.Column = "1" 
+                    Text = "Update"
+                    Clicked="OnActionChosen"/>
+                <Button Grid.Column = "2" 
+                    Text = "View"
+                    Clicked="OnActionChosen"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ContentView>
+</ContentPage>
